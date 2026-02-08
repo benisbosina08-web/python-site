@@ -41,11 +41,14 @@
     <section class="inscription" id="inscription">
         <h2>📝 Inscription</h2>
 
-        <form onsubmit="return envoyerFormulaire()">
-            <input type="text" id="nom" placeholder="Votre nom" required>
-            <input type="email" id="email" placeholder="Votre email" required>
-            <button type="submit">Envoyer</button>
-        </form>https://formspree.io/f/xdalojkv
+        <form action="https://formspree.io/f/xdalojkv" method="POST">
+
+  <input type="text" name="nom" placeholder="Votre nom" required>
+
+  <input type="email" name="email" placeholder="Votre email" required>
+
+  <button type="submit">Envoyer</button>
+        </form>
 
         <p id="message"></p>
     </section>
