@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Pro Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>🐍 Python Pro Academy</h1>
+        <p>Formation Python Professionnelle + Certificat</p>
+        <button onclick="scrollToInscription()">S'inscrire maintenant</button>
+    </header>
+
+    <!-- SECTION FORMATION -->
+    <section class="info">
+        <h2>📌 Pourquoi apprendre Python ?</h2>
+        <p>
+            Python est le langage le plus demandé dans le monde :
+            développement web, cybersécurité, intelligence artificielle,
+            data science et automatisation.
+        </p>
+    </section>
+
+    <!-- PROGRAMME -->
+    <section class="programme">
+        <h2>📚 Programme de la formation</h2>
+
+        <div class="cards">
+            <div class="card">✅ Python Débutant → Pro</div>
+            <div class="card">✅ Projets réels</div>
+            <div class="card">✅ Exercices corrigés</div>
+            <div class="card">✅ Certificat officiel</div>
+        </div>
+    </section>
+
+    <!-- INSCRIPTION -->
+    <section class="inscription" id="inscription">
+        <h2>📝 Inscription</h2>
+
+        <form onsubmit="return envoyerFormulaire()">
+            <input type="text" id="nom" placeholder="Votre nom" required>
+            <input type="email" id="email" placeholder="Votre email" required>
+            <button type="submit">Envoyer</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Python Pro Academy | Formation en ligne avec certificat</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
